@@ -2,10 +2,12 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
-  <default revision="master"
+           fetch="https://android.googlesource.com"
+           review="https://android-review.googlesource.com" />
+           
+  <default revision="refs/tags/android-5.1.1_r24"
            remote="aosp"
+           sync-c="true"
            sync-j="4" />
 
   <project path="build" name="platform/build" groups="pdk,tradefed" >
